@@ -1,0 +1,43 @@
+# chrome.pak
+# chrome.dll
+
+grep 'IDR_THEME_NTP_BACKGROUND?$1'  *
+grep '.dot .selection-bar'          *
+grep '.dot.selected .selection-bar' *
+
+
+background:
+        html {
+	 => background-size: contain;
+
+footer:
+        #footer {
+         background-image: -webkit-linear-gradient(
+         #     #rgba(242, 242, 242, 0.9), rgba(222, 222, 222, 0.9)
+         =>     rgba(242, 242, 242, 0.15), rgba(222, 222, 222, 0.15));
+
+         .dot .selection-bar {
+         #  #border-color: rgba(0, 0, 0, 0.1)
+         =>  border-color: rgba(0, 0, 0, 0.07);
+
+         .dot.selected .selection-bar
+         #  #border-color: #7f7f7f;
+         =>  border-color: rgba(127, 127, 127, 0.18);
+
+
+
+
+         .dot:focus input,
+         .dot:hover input,
+         .dot.selected input {
+           color: #7f7f7f;
+         }
+
+         .dot:focus .selection-bar,
+         .dot:hover .selection-bar,
+         .dot.drag-target .selection-bar {
+         #  #border-color: #b2b2b2;
+         =>  border-color: #121212;
+         }
+
+
