@@ -9,6 +9,7 @@ grep '.dot.selected .selection-bar' *
 background:
         html {
 	 => background-size: contain;
+	    background-size: cover;;
 
 footer:
         #footer {
@@ -18,7 +19,7 @@ footer:
 
          .dot .selection-bar {
          #  #border-color: rgba(0, 0, 0, 0.1)
-         =>  border-color: rgba(0, 0, 0, 0.07);
+         =>  border-color:   rgba(0, 0, 0, 0.07);
 
          .dot.selected .selection-bar
          #  #border-color: #7f7f7f;
@@ -37,7 +38,7 @@ footer:
          .dot:hover .selection-bar,
          .dot.drag-target .selection-bar {
          #  #border-color: #b2b2b2;
-         =>  border-color: #121212;
+         =>  border-color:   #121212;
          }
 
 
